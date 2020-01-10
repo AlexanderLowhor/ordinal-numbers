@@ -5,7 +5,9 @@ class MainClass {
 
     Console.WriteLine("What is your number?");
     int UserNum = Int32.Parse(Console.ReadLine());
-    
+
+    // ALL IRRELAVANT CODE
+    /*
     switch (UserNum % 100) {
         case 11:
         Console.WriteLine($"{UserNum}th");
@@ -40,49 +42,49 @@ class MainClass {
              }
         break;
     }
+    */
 
     int num2 = 0;
 
     do {
-        num2++
+        num2++;
     
-    switch (num2 % 100) {
-        case 11:
-        Console.WriteLine($"{num2}th");
-        break;
+            switch (num2 % 100) {
+            case 11:
+                Console.WriteLine($"{num2}th");
+                break;
 
-        case 12:
+                case 12:
+                Console.WriteLine($"{num2}th");
+                break;
 
-        Console.WriteLine($"{num2}th");
-        break;
-
-        case 13:
-        Console.WriteLine($"{num2}th");
-        break;
+                case 13:
+                Console.WriteLine($"{num2}th");
+                break;
         
-        default:
-             switch (num2 % 10) {
-                 case 1:
-                 Console.WriteLine($"{num2}st");
-                 break;
+                default:
+                    switch (num2 % 10) {
+                        case 1:
+                        Console.WriteLine($"{num2}st");
+                        break;
 
-                 case 2:
-                 Console.WriteLine($"{num2}nd");
-                 break;
+                        case 2:
+                        Console.WriteLine($"{num2}nd");
+                        break;
 
-                 case 3:
-                 Console.WriteLine($"{num2}rd");
-                 break;
+                        case 3:
+                        Console.WriteLine($"{num2}rd");
+                        break;
 
-                 default:
-                 Console.WriteLine($"{num2}th");
-                 break;
-    }
-
-  }
+                        default:
+                        Console.WriteLine($"{num2}th");
+                        break;
+            } 
+                break;
+        } 
+    } while (num2 != UserNum); 
 }
-  }
-
+}
 /*
 1 2 R 1
 
